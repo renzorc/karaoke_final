@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title><%= content_for?(:title) ? yield(:title) : "Karaoke" %></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Karaoke App" />
+	<meta name="keywords" content="karaoke, bootstrap, html5, css3, responsive" />
+	<meta name="author" content="Renzo y Yordic" />
+
+  
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<%= stylesheet_link_tag "animate", media: "screen", rel: "stylesheet", type: "text/css" %>
+	<!-- Icomoon Icon Fonts-->
+	<%= stylesheet_link_tag "icomoon", media: "screen", rel: "stylesheet", type: "text/css" %>
+	<!-- Bootstrap  -->
+	<%= stylesheet_link_tag "bootstrap", media: "screen", rel: "stylesheet", type: "text/css" %>
+	<!-- Superfish -->
+	<%= stylesheet_link_tag "superfish", media: "screen", rel: "stylesheet", type: "text/css" %>
+
+	<%= stylesheet_link_tag "style", media: "screen", rel: "stylesheet", type: "text/css" %>
+
+
+	<!-- Modernizr JS -->
+	<%= javascript_include_tag 'modernizr-2.6.2.min' %>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+		<div id="fh5co-header">
+			<header id="fh5co-header-section">
+				<div class="container">
+					<div class="nav-header">
+						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+						<h1 id="fh5co-logo"><a href="index.html">Karaoke APP</a></h1>
+						<!-- START #fh5co-menu-wrap -->
+						<nav id="fh5co-menu-wrap" role="navigation">
+							<ul class="sf-menu" id="fh5co-primary-menu">
+								<li class="active">
+									<a href="index.html">Home</a>
+								</li>
+								<li>
+									<a href="schedule.html">Locales</a>
+								</li>
+								<li><a href="contact.html">Login</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>		
+		</div>
+		        <!-- end:fh5co-header -->
+		<div class="fh5co-hero">
+			<div class="fh5co-overlay"></div>
+			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url('/assets/home-image.jpg');">
+				<div class="desc animate-box">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-7">
+								<h2>Karaoke APP</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end:fh5co-hero -->
+		<div id="fh5co-schedule-section" class="fh5co-lightgray-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="heading-section text-center animate-box">
+							<h2>Nuestros locales</h2>
+							<p>Tenemos los siguientes puntos en los cuales puedes disfrutar de nuestro servicio.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row animate-box">
+					<div class="row text-center">
+
+						<div class="col-md-12 schedule-container">
+							<div class="schedule-content active" data-day="sunday">
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<%= image_tag "fit-yoga.svg", alt: "Cycling" %>
+										<small>09PM-5AM</small>
+										<h3>La Molina</h3>
+										<span>Aforo: 300 personas</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<%= image_tag "fit-yoga.svg", alt: "" %>
+										<small>09PM-5AM</small>
+										<h3>La Molina</h3>
+										<span>Aforo: 300 personas</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<%= image_tag "fit-yoga.svg", alt: "" %>
+										<small>09PM-5AM</small>
+										<h3>La Molina</h3>
+										<span>Aforo: 300 personas</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="program program-schedule">
+										<%= image_tag "fit-yoga.svg", alt: "" %>
+										<small>09PM-5AM</small>
+										<h3>La Molina</h3>
+										<span>Aforo: 300 personas</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div id="fh5co-blog-section">
+			<div class="container">
+				<div class="row">
+				  <div class="col-md-2">
+				  </div>
+					<div class="col-md-8">
+						<div class="col-md-12">
+							<div class="heading-section animate-box">
+								<h2>Eventos proximos</h2>
+							</div>
+						</div>
+						<div class="col-md-12 col-md-offset-0">
+							<div class="fh5co-blog animate-box">
+								<div class="meta-date text-center">
+									<p><span class="date">28</span><span>Octubre</span><span>2016</span></p>
+								</div>
+								<div class="desc desc2">
+									<h3><a href=""#>J Balvin</a></h3>
+									<span class="posted_by">Publicado por: Administrador</span>
+									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
+									<p>Ya sabes que hacer</p>
+									<a href="#" class="btn btn-default">Mira mas</a>
+								</div> 
+							</div>
+						</div>
+						<div class="col-md-12 col-md-offset-0">
+							<div class="fh5co-blog animate-box">
+								<div class="meta-date text-center">
+									<p><span class="date">24</span><span>Nov</span><span>2016</span></p>
+								</div>
+								<div class="desc desc2">
+									<h3><a href=""#>Maluma</a></h3>
+									<span class="posted_by">Publicado por: Administrador</span>
+									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
+									<p>Ya sabes que hacer</p>
+									<a href="#" class="btn btn-default">Read More</a>
+								</div> 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- fh5co-blog-section -->
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 animate-box">
+							<h3 class="section-title">Registro</h3>
+							<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: 'contact-form'}) do |f| %>
+								<div class="form-group">
+									<%= f.label :email, class: "sr-only" %><br />
+                  <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "Email" %>
+								</div>
+								<div class="form-group">
+									<%= f.label :password, class: "sr-only" %><br />
+                  <% if @minimum_password_length %>
+                    <em>(<%= @minimum_password_length %> characters minimum)</em><br/>
+                  <% end %>
+                  <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Contraseña" %>
+								</div>
+								<div class="form-group">
+									<%= f.label :password_confirmation, class: "sr-only" %><br />
+                  <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control", placeholder: "Repetir Contraseña" %>
+								</div>
+								<div class="form-group">
+									<%= f.submit "Sign up", class: "btn btn-send-message btn-md", id: "btn-submit" %>
+								</div>
+							<% end %>
+						</div>
+						<div class="col-md-4 animate-box">
+							<h3 class="section-title">Nuestra direccion</h3>
+							<ul class="contact-info">
+								<li><i class="icon-map-marker"></i>Av Primavera</li>
+								<li><i class="icon-phone"></i>+ 01 123123123</li>
+								<li><i class="icon-envelope"></i><a href="#">info@karaoke.com</a></li>
+								<li><i class="icon-globe2"></i><a href="#">www.karaoke.com</a></li>
+							</ul>
+						</div>
+						<div class="col-md-4 animate-box">
+							<h3 class="section-title">Login</h3>
+							<%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: 'contact-form'}) do |f| %>
+								<div class="form-group">
+									<%= f.label :email, class: "sr-only" %><br />
+                  <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "Email" %>
+								</div>
+								<div class="form-group">
+									<%= f.label :password, class: "sr-only" %><br />
+                  <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Contraseña" %>
+								</div>
+								<div class="form-group">
+								  <%= f.submit "Log in", class: "btn btn-send-message btn-md", id: "btn-submit" %>
+								</div>
+							<% end %>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 animate-box">
+							<h3 class="section-title">About Us</h3>
+							<p>Empresa con locales para karaoke y eventos.</p>
+						</div>
+					</div>
+					<div class="row copy-right">
+						<div class="col-md-6 col-md-offset-3 text-center">
+							<p>Copyright 2016 Karaoke APP</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+
+	</div>
+	<!-- END fh5co-page -->
+
+	</div>
+	<!-- END fh5co-wrapper -->
+
+	<!-- jQuery -->
+
+
+	<%= javascript_include_tag 'jquery.min' %>
+	<!-- jQuery Easing -->
+	<%= javascript_include_tag 'jquery.easing.1.3' %>
+	<!-- Bootstrap -->
+	<%= javascript_include_tag 'bootstrap.min' %>
+	<!-- Waypoints -->
+	<%= javascript_include_tag 'jquery.waypoints.min' %>
+	<!-- Stellar -->
+	<%= javascript_include_tag 'jquery.stellar.min' %>
+	<!-- Superfish -->
+	<%= javascript_include_tag 'hoverIntent' %>
+	<%= javascript_include_tag 'superfish' %>
+
+	<!-- Main JS (Do not remove) -->
+	<%= javascript_include_tag 'main' %>
+
+	</body>
+</html>

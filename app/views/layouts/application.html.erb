@@ -60,7 +60,9 @@
 								<li>
 									<a href="schedule.html">Locales</a>
 								</li>
-								<li><a href="contact.html">Login</a></li>
+								<li>
+									<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+								</li>
 							</ul>
 						</nav>
 					</div>

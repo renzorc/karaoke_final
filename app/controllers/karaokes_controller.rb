@@ -1,0 +1,2 @@
+class KaraokesController < ApplicationController
+end
