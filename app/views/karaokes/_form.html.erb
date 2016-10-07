@@ -1,0 +1,32 @@
+<%= form_for(@karaoke, html: {class: 'contact-form'}) do |f| %>
+  <% if @karaoke.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@karaoke.errors.count, "error") %> No permitio que el local se guarde:</h2>
+
+      <ul>
+      <% @karaoke.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name, class: "sr-only" %><br />
+    <%= f.text_field :name, autofocus: true, class: "form-control", placeholder: "Nombre" %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :address, class: "sr-only" %><br />
+    <%= f.text_field :address, autofocus: true, class: "form-control", placeholder: "Direccion" %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :phone, class: "sr-only" %><br />
+    <%= f.text_field :phone, autofocus: true, class: "form-control", placeholder: "Telefono" %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

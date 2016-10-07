@@ -98,38 +98,17 @@
 
 						<div class="col-md-12 schedule-container">
 							<div class="schedule-content active" data-day="sunday">
-								<div class="col-md-3 col-sm-6">
-									<div class="program program-schedule">
-										<%= image_tag "fit-yoga.svg", alt: "Cycling" %>
-										<small>09PM-5AM</small>
-										<h3>La Molina</h3>
-										<span>Aforo: 300 personas</span>
+								<% @karaokes.each do |karaoke| %>
+									<div class="col-md-3 col-sm-6">
+										<div class="program program-schedule">
+											<%= image_tag "fit-yoga.svg", alt: "Cycling" %>
+											<small>09PM-5AM</small>
+											<h3><%= karaoke.address %></h3>
+											<span><%= karaoke.name %></span>
+											<span><%= karaoke.phone %></span>
+										</div>
 									</div>
-								</div>
-								<div class="col-md-3 col-sm-6">
-									<div class="program program-schedule">
-										<%= image_tag "fit-yoga.svg", alt: "" %>
-										<small>09PM-5AM</small>
-										<h3>La Molina</h3>
-										<span>Aforo: 300 personas</span>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-6">
-									<div class="program program-schedule">
-										<%= image_tag "fit-yoga.svg", alt: "" %>
-										<small>09PM-5AM</small>
-										<h3>La Molina</h3>
-										<span>Aforo: 300 personas</span>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-6">
-									<div class="program program-schedule">
-										<%= image_tag "fit-yoga.svg", alt: "" %>
-										<small>09PM-5AM</small>
-										<h3>La Molina</h3>
-										<span>Aforo: 300 personas</span>
-									</div>
-								</div>
+								<% end %>
 							</div>
 						</div>
 

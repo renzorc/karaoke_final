@@ -1,0 +1,36 @@
+        <div id="fh5co-blog-section">
+			<div class="container">
+				<div class="row">
+				  <div class="col-md-2">
+				  </div>
+					<div class="col-md-8">
+						<div class="col-md-9">
+							<div class="heading-section animate-box">
+								<h2>Eventos proximos</h2>
+							</div>
+						</div>
+    					<div class="col-md-3">
+    						<a class="btn btn-primary btn-block" href="<%= new_event_path %>">
+    				          Crear Evento
+    				        </a>
+    				    </div>
+    				    <% @events.each do |event| %>
+    						<div class="col-md-12 col-md-offset-0">
+    							<div class="fh5co-blog animate-box">
+    								<div class="meta-date text-center">
+    									<p><span class="date">28</span><span>Octubre</span><span>2016</span></p>
+    								</div>
+    								<div class="desc desc2">
+    									<h3><a href=""#><%= event.name %></a></h3>
+    									<span class="posted_by">Publicado por: Administrador</span>
+    									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
+    									<p>Ya sabes que hacer</p>
+    									<a href="#" class="btn btn-default">Mira mas</a>
+    								</div> 
+    							</div>
+    						</div>
+    					<% end %>
+					</div>
+				</div>
+			</div>
+		</div>

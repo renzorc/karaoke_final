@@ -55,10 +55,13 @@
 						<nav id="fh5co-menu-wrap" role="navigation">
 							<ul class="sf-menu" id="fh5co-primary-menu">
 								<li class="active">
-									<a href="index.html">Home</a>
+									<%= link_to('Inicio', root_path) %>
 								</li>
 								<li>
-									<a href="schedule.html">Locales</a>
+									<%= link_to('Eventos', events_path) %>
+								</li>
+								<li>
+									<%= link_to('Locales', karaokes_path) %>
 								</li>
 								<li>
 									<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
@@ -68,6 +71,10 @@
 					</div>
 				</div>
 			</header>		
+		</div>
+		<!-- end:fh5co-header -->
+		<div class="fh5co-hero" style="background-image: black; height: 150px">
+			<div class="fh5co-overlay"></div>
 		</div>
 		<%= yield %>
 		<footer>

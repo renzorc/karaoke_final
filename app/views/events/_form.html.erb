@@ -1,0 +1,32 @@
+<%= form_for(@event, html: {class: 'contact-form'}) do |f| %>
+  <% if @event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@event.errors.count, "error") %> No permitio que el evento se guarde:</h2>
+
+      <ul>
+      <% @event.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name, class: "sr-only" %><br />
+    <%= f.text_field :name, autofocus: true, class: "form-control", placeholder: "Nombre" %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :karaoke_id, class: "sr-only" %><br />
+    <%= f.select :karaoke_id, options_from_collection_for_select(@karaokes, "id", "name"), {include_blank: 'Selecciona el local (optional)'}, id:'karaokes_select', class:'form-control' %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :date_of_issue, class: "sr-only" %><br />
+    <%= f.date_field :date_of_issue, autofocus: true, class: "form-control", placeholder: "Telefono" %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
